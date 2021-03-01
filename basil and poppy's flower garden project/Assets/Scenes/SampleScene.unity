@@ -201,7 +201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 181022560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 978802052}
+        m_MethodName: MoveRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &181022560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +330,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 229137594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 978802052}
+        m_MethodName: MoveDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &229137594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +459,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 329188341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 978802052}
+        m_MethodName: MoveUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &329188341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,7 +828,7 @@ GameObject:
   - component: {fileID: 850799931}
   - component: {fileID: 850799930}
   m_Layer: 5
-  m_Name: Button action (3)
+  m_Name: Button spray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,6 +944,7 @@ GameObject:
   - component: {fileID: 978802051}
   - component: {fileID: 978802050}
   - component: {fileID: 978802052}
+  - component: {fileID: 978802053}
   m_Layer: 0
   m_Name: poppy player
   m_TagString: Untagged
@@ -976,7 +1010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978802049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.97, y: -1.93, z: 0}
+  m_LocalPosition: {x: 1, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -994,7 +1028,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb45014290c0fb4fae1144bdfb7ee5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceStrength: 5
+  forceStrength: 100
+--- !u!50 &978802053
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978802049}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &985906631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1130,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 985906634}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 978802052}
+        m_MethodName: MoveLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &985906634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1126,7 +1192,7 @@ GameObject:
   - component: {fileID: 1841698864}
   - component: {fileID: 1841698863}
   m_Layer: 5
-  m_Name: Button action (2)
+  m_Name: Button mulch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1310,7 +1376,7 @@ GameObject:
   - component: {fileID: 1964536794}
   - component: {fileID: 1964536793}
   m_Layer: 5
-  m_Name: Button action (1)
+  m_Name: Button water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
