@@ -10,20 +10,39 @@ public class PlayerMovement : MonoBehaviour
     //these will be called by each button for movement
     public void MoveUp()
     {
-        //get the rigidbody for movement
-        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
-
-        //Move in the correct direction with the set force strength
-        ourRigidbody.AddForce(Vector2.up * forceStrength);
+        StartCoroutine(MoveNorth());
     }
-    public void MoveDown()
+
+    public IEnumerator MoveNorth()
     {
         //get the rigidbody for movement
         Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
 
         //Move in the correct direction with the set force strength
-        ourRigidbody.AddForce(Vector2.down * forceStrength);
+        ourRigidbody.AddForce(Vector2.left * (forceStrength / 2));
+        yield return new WaitForSeconds(0.3F);
+        ourRigidbody.AddForce(Vector2.up * forceStrength);
+        yield return new WaitForSeconds(0.3F);
+        ourRigidbody.AddForce(Vector2.right * (forceStrength / 2));
     }
+    public void MoveDown()
+    {
+        StartCoroutine(MoveSouth());
+    }
+
+    public IEnumerator MoveSouth()
+    {
+        //get the rigidbody for movement
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        //Move in the correct direction with the set force strength
+        ourRigidbody.AddForce(Vector2.left * (forceStrength / 2));
+        yield return new WaitForSeconds(0.3F);
+        ourRigidbody.AddForce(Vector2.down * forceStrength);
+        yield return new WaitForSeconds(0.3F);
+        ourRigidbody.AddForce(Vector2.right * (forceStrength / 2));
+    }
+
     public void MoveLeft()
     {
         //get the rigidbody for movement
