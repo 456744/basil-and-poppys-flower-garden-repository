@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //public variable, visable in unity editor
+    //public variables, visable in unity editor
     public float forceStrength;
+    public float waitTime;
 
     //these will be called by each button for movement
     public void MoveUp()
@@ -75,6 +76,44 @@ public class PlayerMovement : MonoBehaviour
         // Tell our animator what the speeds are
         ourAnimator.SetFloat("speedH", currentSpeedH);
         ourAnimator.SetFloat("speedV", currentSpeedV);
+
+    }
+    public void Watering()
+    {
+        StartCoroutine(Water());
+    }
+
+    public IEnumerator Water()
+    {
+
+        // Get the animator that we'll be using for movement
+        Animator ourAnimator = GetComponent<Animator>();
+
+        ourAnimator.SetBool("watering", true);
+
+        //change boolean to change sprite
+        yield return new WaitForSeconds(waitTime);
+
+        ourAnimator.SetBool("watering", false);
+
+    }
+    public void Spraying()
+    {
+        StartCoroutine(Spray());
+    }
+
+    public IEnumerator Spray()
+    {
+
+        // Get the animator that we'll be using for movement
+        Animator ourAnimator = GetComponent<Animator>();
+
+        ourAnimator.SetBool("spraying", true);
+
+        //change boolean to change sprite
+        yield return new WaitForSeconds(waitTime);
+
+        ourAnimator.SetBool("spraying", false);
 
     }
 }
