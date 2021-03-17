@@ -6,12 +6,35 @@ public class PlayerMovement : MonoBehaviour
 {
     //public variables, visable in unity editor
     public float forceStrength;
+
     public float waitTime;
+
+    public AudioClip walking;
+
+    public AudioClip plant;
+
+    public AudioClip spray;
+
+    public AudioClip water;
 
     //these will be called by each button for movement
     public void MoveUp()
     {
+
         StartCoroutine(MoveNorth());
+
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        if (ourAudioSource.clip == walking && ourAudioSource.isPlaying)
+        {
+
+        }
+        else
+        {
+            ourAudioSource.clip = walking;
+
+            ourAudioSource.Play();
+        }
     }
 
     public IEnumerator MoveNorth()
@@ -29,6 +52,19 @@ public class PlayerMovement : MonoBehaviour
     public void MoveDown()
     {
         StartCoroutine(MoveSouth());
+
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        if (ourAudioSource.clip == walking && ourAudioSource.isPlaying)
+        {
+
+        }
+        else
+        {
+            ourAudioSource.clip = walking;
+
+            ourAudioSource.Play();
+        }
     }
 
     public IEnumerator MoveSouth()
@@ -51,6 +87,19 @@ public class PlayerMovement : MonoBehaviour
 
         //Move in the correct direction with the set force strength
         ourRigidbody.AddForce(Vector2.left * forceStrength);
+
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        if (ourAudioSource.clip == walking && ourAudioSource.isPlaying)
+        {
+
+        }
+        else
+        {
+            ourAudioSource.clip = walking;
+
+            ourAudioSource.Play();
+        }
     }
     public void MoveRight()
     {
@@ -59,6 +108,19 @@ public class PlayerMovement : MonoBehaviour
 
         //Move in the correct direction with the set force strength
         ourRigidbody.AddForce(Vector2.right * forceStrength);
+
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        if (ourAudioSource.clip == walking && ourAudioSource.isPlaying)
+        {
+
+        }
+        else
+        {
+            ourAudioSource.clip = walking;
+
+            ourAudioSource.Play();
+        }
     }
 
     public void Update()
@@ -81,6 +143,19 @@ public class PlayerMovement : MonoBehaviour
     public void Watering()
     {
         StartCoroutine(Water());
+
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        if (ourAudioSource.clip == water && ourAudioSource.isPlaying)
+        {
+
+        }
+        else
+        {
+            ourAudioSource.clip = water;
+
+            ourAudioSource.Play();
+        }
     }
 
     public IEnumerator Water()
@@ -100,6 +175,19 @@ public class PlayerMovement : MonoBehaviour
     public void Spraying()
     {
         StartCoroutine(Spray());
+
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        if (ourAudioSource.clip == spray && ourAudioSource.isPlaying)
+        {
+
+        }
+        else
+        {
+            ourAudioSource.clip = spray;
+
+            ourAudioSource.Play();
+        }
     }
 
     public IEnumerator Spray()
