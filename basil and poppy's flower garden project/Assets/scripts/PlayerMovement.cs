@@ -21,7 +21,9 @@ public class PlayerMovement : MonoBehaviour
     public void MoveUp()
     {
 
-        StartCoroutine(MoveNorth());
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        ourRigidbody.AddForce(Vector2.up * forceStrength);
 
         AudioSource ourAudioSource = GetComponent<AudioSource>();
 
@@ -37,21 +39,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator MoveNorth()
-    {
-        //get the rigidbody for movement
-        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
-
-        //Move in the correct direction with the set force strength
-        ourRigidbody.AddForce(Vector2.left * (forceStrength / 2));
-        yield return new WaitForSeconds(0.3F);
-        ourRigidbody.AddForce(Vector2.up * forceStrength);
-        yield return new WaitForSeconds(0.3F);
-        ourRigidbody.AddForce(Vector2.right * (forceStrength / 2));
-    }
     public void MoveDown()
     {
-        StartCoroutine(MoveSouth());
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        ourRigidbody.AddForce(Vector2.down * forceStrength);
 
         AudioSource ourAudioSource = GetComponent<AudioSource>();
 
@@ -67,18 +59,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator MoveSouth()
-    {
-        //get the rigidbody for movement
-        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
-
-        //Move in the correct direction with the set force strength
-        ourRigidbody.AddForce(Vector2.left * (forceStrength / 2));
-        yield return new WaitForSeconds(0.3F);
-        ourRigidbody.AddForce(Vector2.down * forceStrength);
-        yield return new WaitForSeconds(0.3F);
-        ourRigidbody.AddForce(Vector2.right * (forceStrength / 2));
-    }
 
     public void MoveLeft()
     {
