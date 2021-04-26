@@ -48,6 +48,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7332935364257209304}
   - component: {fileID: 1721935437726809890}
+  - component: {fileID: 3568923588253610367}
   m_Layer: 0
   m_Name: water
   m_TagString: Untagged
@@ -119,6 +120,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3568923588253610367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546454956194802549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1765188168765213604
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081147046182301685}
   - component: {fileID: 3222341340546499704}
+  - component: {fileID: 4341255233089206752}
   m_Layer: 0
   m_Name: weed extras
   m_TagString: Untagged
@@ -200,6 +214,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4341255233089206752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765188168765213604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2554617114088679652
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 388374695327303611}
   - component: {fileID: 8640132057104144580}
+  - component: {fileID: 1850115135818659426}
   m_Layer: 0
   m_Name: spray
   m_TagString: Untagged
@@ -281,6 +308,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1850115135818659426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554617114088679652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3488753369498430202
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3089978579428573364}
   - component: {fileID: 7112034729576546865}
+  - component: {fileID: 39071441728222507}
   m_Layer: 0
   m_Name: flower petals
   m_TagString: Untagged
@@ -363,6 +403,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &39071441728222507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3488753369498430202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4563275788260295842
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9198543828843428895}
   - component: {fileID: 5062196788737971478}
+  - component: {fileID: 756918947852215669}
   m_Layer: 0
   m_Name: weed special extras
   m_TagString: Untagged
@@ -444,6 +497,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &756918947852215669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4563275788260295842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5827810511836851677
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +520,7 @@ GameObject:
   - component: {fileID: 5700344027166583016}
   - component: {fileID: 3506835657007020030}
   - component: {fileID: 2855035649922264127}
+  - component: {fileID: 4370817370794779273}
   m_Layer: 0
   m_Name: bugs
   m_TagString: Untagged
@@ -545,6 +611,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4370817370794779273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5827810511836851677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6203427610766403851
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4925427229967792977}
   - component: {fileID: 6285186329302733047}
+  - component: {fileID: 5178313201640065279}
   m_Layer: 0
   m_Name: weed petals
   m_TagString: Untagged
@@ -627,6 +706,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5178313201640065279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203427610766403851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6935215543124931188
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1694679265206461323}
   - component: {fileID: 927730113958371170}
+  - component: {fileID: 1592781724015455833}
   m_Layer: 0
   m_Name: mulch
   m_TagString: Untagged
@@ -708,6 +800,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1592781724015455833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935215543124931188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7069144152649331824
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6834161015967463325}
   - component: {fileID: 1843270726638467395}
+  - component: {fileID: 873863410545461141}
   m_Layer: 0
   m_Name: flower leaves_middle
   m_TagString: Untagged
@@ -789,6 +894,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &873863410545461141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069144152649331824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8355798758307832011
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196202356383211092}
   - component: {fileID: 3561636160258905897}
+  - component: {fileID: 4948162454279652830}
   m_Layer: 0
   m_Name: weed special petals
   m_TagString: Untagged
@@ -871,6 +989,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4948162454279652830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355798758307832011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8459344274683517586
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +1011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3537881365258056004}
   - component: {fileID: 2996473189964724631}
+  - component: {fileID: 775972061149624793}
   m_Layer: 0
   m_Name: flower special petals
   m_TagString: Untagged
@@ -953,6 +1084,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &775972061149624793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459344274683517586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8869380261007225965
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +1106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9133696978171658188}
   - component: {fileID: 1465814645920895324}
+  - component: {fileID: 1352896976888803670}
   m_Layer: 0
   m_Name: flower special extras
   m_TagString: Untagged
@@ -1034,3 +1178,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1352896976888803670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869380261007225965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efc12b2348bd0448719f67002bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
