@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 5700344027166583016}
   - component: {fileID: 3506835657007020030}
   - component: {fileID: 2855035649922264127}
-  - component: {fileID: 4370817370794779273}
+  - component: {fileID: 5377764169633505954}
   m_Layer: 0
   m_Name: bugs
   m_TagString: Untagged
@@ -611,7 +611,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4370817370794779273
+--- !u!114 &5377764169633505954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -620,9 +620,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5827810511836851677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
+  m_Script: {fileID: 11500000, guid: b7fa7f7159bc03148858f210305afc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoreBugs: 1
 --- !u!1 &6203427610766403851
 GameObject:
   m_ObjectHideFlags: 0
