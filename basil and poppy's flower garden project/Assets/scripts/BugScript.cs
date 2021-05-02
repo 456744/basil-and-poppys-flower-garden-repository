@@ -8,7 +8,7 @@ public class BugScript : MonoBehaviour
 
     private float Spawn;
     private float Time;
-    private bool Alive;
+    public bool Alive;
     public float MoreBugs;
     public float Sprayed;
 

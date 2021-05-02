@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioClip water;
 
+    public GameObject plot;
+
+    public void Start()
+    {
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+    }
+
     //these will be called by each button for movement
     public void MoveUp()
     {
@@ -122,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Watering()
     {
+        
         StartCoroutine(Water());
 
         AudioSource ourAudioSource = GetComponent<AudioSource>();
@@ -136,6 +144,12 @@ public class PlayerMovement : MonoBehaviour
 
             ourAudioSource.Play();
         }
+
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        //plot = gameObject.Find("Plot holder (" & &", " & -2 & ")");
+
+
     }
 
     public IEnumerator Water()

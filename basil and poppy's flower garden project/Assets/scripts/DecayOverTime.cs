@@ -6,30 +6,32 @@ public class DecayOverTime : MonoBehaviour
 {
     SpriteRenderer ourSpriteRenderer;
 
+    public int Time;
+    public bool active;
+
     private void Start()
     {
         ourSpriteRenderer = GetComponent<SpriteRenderer>();
+        active = false;
+        Time = 5000;
     }
     
 
-    private float Time;
-    private void Decay()
-    {
-        ourSpriteRenderer.color = Color.white;
-
-        Time = 5000;
-    }
-
-
     void Update()
     {
-        if (Time > 0)
+
+        if (active == true)
         {
-            Time = Time - 1;
-        }
-        else if (Time == 0)
-        {
-            ourSpriteRenderer.color = Color.clear;
+            if (Time > 0)
+            {
+                ourSpriteRenderer.color = Color.white;
+
+                Time = Time - 1;
+            }
+            else if (Time == 0)
+            {
+                ourSpriteRenderer.color = Color.clear;
+            }
         }
     }
 }
