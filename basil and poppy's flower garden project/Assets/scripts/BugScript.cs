@@ -6,18 +6,20 @@ public class BugScript : MonoBehaviour
 {
     SpriteRenderer ourSpriteRenderer;
 
-    private void Start()
-    {
-        ourSpriteRenderer = GetComponent<SpriteRenderer>();
-        Alive = false;
-        Spawn = 50;
-    }
-
     private float Spawn;
     private float Time;
     private bool Alive;
     public float MoreBugs;
-    private float ran;
+    public float Sprayed;
+
+    private void Start()
+    {
+        ourSpriteRenderer = GetComponent<SpriteRenderer>();
+        Alive = false;
+        Spawn = 500000;
+    }
+
+    
 
     void Update()
     {
@@ -25,13 +27,13 @@ public class BugScript : MonoBehaviour
         {
             if (Time > 0)
             {
-                Time = Time - 1;
+                Time -= Sprayed;
             }
             else if (Time == 0)
             {
                 ourSpriteRenderer.color = Color.clear;
 
-                Spawn = 50;
+                Spawn = 500000;
 
                 Alive = false;
             }
@@ -40,13 +42,13 @@ public class BugScript : MonoBehaviour
         {
             if (Spawn > 0)
             {
-                Spawn -= Mathf.Round(Random.Range(0, MoreBugs));
+                Spawn -= (Mathf.Round(Random.Range(0, 10)))*MoreBugs;
             }
             else if (Spawn == 0)
             {
                 ourSpriteRenderer.color = Color.white;
 
-                Time = 50;
+                Time = 500000;
 
                 Alive = true;
             }

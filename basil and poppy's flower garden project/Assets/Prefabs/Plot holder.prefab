@@ -624,6 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoreBugs: 1
+  Sprayed: 1
 --- !u!1 &6203427610766403851
 GameObject:
   m_ObjectHideFlags: 0

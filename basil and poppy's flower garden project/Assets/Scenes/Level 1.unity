@@ -21309,6 +21309,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5377764169633505954, guid: db0a933562a45ff4db1cd9b8e6849ff8,
+        type: 3}
+      propertyPath: MoreBugs
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db0a933562a45ff4db1cd9b8e6849ff8, type: 3}
 --- !u!1 &329188338
@@ -21999,6 +22004,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5377764169633505954, guid: db0a933562a45ff4db1cd9b8e6849ff8,
+        type: 3}
+      propertyPath: MoreBugs
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7112034729576546865, guid: db0a933562a45ff4db1cd9b8e6849ff8,
         type: 3}
       propertyPath: m_Color.a
@@ -22364,6 +22374,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5377764169633505954, guid: db0a933562a45ff4db1cd9b8e6849ff8,
+        type: 3}
+      propertyPath: MoreBugs
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7112034729576546865, guid: db0a933562a45ff4db1cd9b8e6849ff8,
         type: 3}
       propertyPath: m_Color.r
@@ -22467,6 +22482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377764169633505954, guid: db0a933562a45ff4db1cd9b8e6849ff8,
+        type: 3}
+      propertyPath: MoreBugs
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db0a933562a45ff4db1cd9b8e6849ff8, type: 3}
@@ -26011,6 +26031,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5377764169633505954, guid: db0a933562a45ff4db1cd9b8e6849ff8,
+        type: 3}
+      propertyPath: MoreBugs
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7112034729576546865, guid: db0a933562a45ff4db1cd9b8e6849ff8,
         type: 3}
       propertyPath: m_Color.a
@@ -26746,6 +26771,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377764169633505954, guid: db0a933562a45ff4db1cd9b8e6849ff8,
+        type: 3}
+      propertyPath: MoreBugs
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7112034729576546865, guid: db0a933562a45ff4db1cd9b8e6849ff8,
         type: 3}
@@ -28573,6 +28603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377764169633505954, guid: db0a933562a45ff4db1cd9b8e6849ff8,
+        type: 3}
+      propertyPath: MoreBugs
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6285186329302733047, guid: db0a933562a45ff4db1cd9b8e6849ff8,
         type: 3}
