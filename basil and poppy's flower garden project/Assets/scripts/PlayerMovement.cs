@@ -147,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 
         Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
 
-        //plot = gameObject.Find("Plot holder (" & &", " & -2 & ")");
+        //plot = gameObject.Find("Plot holder");
 
 
     }

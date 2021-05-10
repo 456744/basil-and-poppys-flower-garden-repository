@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1502348490829134290}
   m_Layer: 0
   m_Name: Plot holder
-  m_TagString: Untagged
+  m_TagString: Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Time: 0
+  active: 0
 --- !u!1 &1765188168765213604
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Time: 0
+  active: 0
 --- !u!1 &3488753369498430202
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,6 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fa7f7159bc03148858f210305afc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Alive: 0
   MoreBugs: 1
   Sprayed: 1
 --- !u!1 &6203427610766403851
@@ -814,6 +819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc69b1c4c1e4f214b857c5d0e99d4aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Time: 0
+  active: 0
 --- !u!1 &7069144152649331824
 GameObject:
   m_ObjectHideFlags: 0
