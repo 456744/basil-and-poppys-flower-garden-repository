@@ -5,19 +5,22 @@ using UnityEngine;
 public class FlowerDecay : MonoBehaviour
 {
     SpriteRenderer ourSpriteRenderer;
-
+    private float Time;
+    public float Bloom;
     private void Start()
     {
         ourSpriteRenderer = GetComponent<SpriteRenderer>();
+        Time = 0;
+        Bloom = 5000;
     }
 
 
-    private float Time;
+    
     private void Decay()
     {
         ourSpriteRenderer.color = Color.white;
-
-        Time = 500000;
+        gameObject.tag = "active";
+        Time = 5000000;
     }
 
 
@@ -30,6 +33,15 @@ public class FlowerDecay : MonoBehaviour
         else if (Time == 0)
         {
             ourSpriteRenderer.color = Color.clear;
+            gameObject.tag = "unactive";
+        }
+        if(Bloom == 0)
+        {
+            Decay();
+        }
+        else if (Bloom > 0)
+        {
+            Bloom -= (Mathf.Round(Random.Range(0, 10)));
         }
     }
 }
