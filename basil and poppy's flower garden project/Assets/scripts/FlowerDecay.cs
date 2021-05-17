@@ -10,8 +10,8 @@ public class FlowerDecay : MonoBehaviour
     private void Start()
     {
         ourSpriteRenderer = GetComponent<SpriteRenderer>();
-        Time = 0;
-        Bloom = 5000;
+        Time = 10;
+        Bloom = 1000;
     }
 
 
@@ -20,7 +20,8 @@ public class FlowerDecay : MonoBehaviour
     {
         ourSpriteRenderer.color = Color.white;
         gameObject.tag = "active";
-        Time = 5000000;
+        Time = 500000;
+        Bloom = -1;
     }
 
 
@@ -34,6 +35,7 @@ public class FlowerDecay : MonoBehaviour
         {
             ourSpriteRenderer.color = Color.clear;
             gameObject.tag = "unactive";
+            Bloom = 5000;
         }
         if(Bloom == 0)
         {
@@ -42,6 +44,10 @@ public class FlowerDecay : MonoBehaviour
         else if (Bloom > 0)
         {
             Bloom -= (Mathf.Round(Random.Range(0, 10)));
+            if(Bloom < 0)
+            {
+                Bloom = 0;
+            }
         }
     }
 }
