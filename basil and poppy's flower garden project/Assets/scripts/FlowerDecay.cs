@@ -36,7 +36,7 @@ public class FlowerDecay : MonoBehaviour
             {
                 ourSpriteRenderer.color = Color.clear;
                 gameObject.tag = "unactive";
-                Bloom = 500000;
+                Bloom = 10000000;
             }
         }
         else if (gameObject.tag == "unactive")
