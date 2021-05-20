@@ -48,7 +48,6 @@ public class FlowerDecay : MonoBehaviour
             else if (Bloom > 0)
             {
                 Bloom = Bloom - (Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, 5000000)))))))))))));
-                Debug.LogWarning(Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, 5000000)))))))))))));
                 if (Bloom < 0)
                 {
                     Bloom = 0;
