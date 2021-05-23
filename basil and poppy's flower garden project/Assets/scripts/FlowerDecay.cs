@@ -16,6 +16,10 @@ public class FlowerDecay : MonoBehaviour
     public float MTime;
     public bool MActive;
     public int mulched;
+    public float BTime;
+    public bool BActive;
+    public int bugged;
+    public int score;
 
     private void Start()
     {
@@ -26,6 +30,9 @@ public class FlowerDecay : MonoBehaviour
         watered = 1;
         sprayed = 1;
         mulched = 1;
+        bugged = 1;
+        score = 5000;
+        BTime = 500000;
     }
 
 
@@ -34,17 +41,17 @@ public class FlowerDecay : MonoBehaviour
     {
         ourSpriteRenderer.color = Color.cyan;
         gameObject.tag = "active";
-        Time = 5000;
+        Time = 2500;
     }
 
 
     void Update()
     {
-        if (gameObject.tag == "active")
+        if (gameObject.CompareTag("active"))
         {
             if (Time > 0)
             {
-                Time = Time - 1;
+                Time -= 1 * sprayed * bugged / watered / mulched;
             }
             else if (Time == 0)
             {
@@ -52,8 +59,18 @@ public class FlowerDecay : MonoBehaviour
                 gameObject.tag = "unactive";
                 Bloom = 10000000;
             }
+            if (score > 0)
+            {
+                score--;
+            }
+            else if (score == 0)
+            {
+                //do a thing
+
+                score = 5000;
+            }
         }
-        else if (gameObject.tag == "unactive")
+        else if (gameObject.CompareTag("unactive"))
         {
             if (Bloom == 0)
             {
@@ -61,7 +78,7 @@ public class FlowerDecay : MonoBehaviour
             }
             else if (Bloom > 0)
             {
-                Bloom = Bloom - ((Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, 5000000)))))))))))))*watered*mulched/sprayed);
+                Bloom -= Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, Random.Range(0, 5000000)))))))))))) * watered * mulched / sprayed / bugged;
                 if (Bloom < 0)
                 {
                     Bloom = 0;
@@ -72,7 +89,7 @@ public class FlowerDecay : MonoBehaviour
         {
             if (WTime > 0)
             {
-                WTime = WTime - 1;
+                WTime--;
             }
             else if (WTime == 0)
             {
@@ -83,7 +100,7 @@ public class FlowerDecay : MonoBehaviour
         {
             if (STime > 0)
             {
-                STime = STime - 1;
+                STime--;
             }
             else if (STime == 0)
             {
@@ -94,11 +111,22 @@ public class FlowerDecay : MonoBehaviour
         {
             if (MTime > 0)
             {
-                MTime = MTime - 1;
+                MTime--;
             }
             else if (MTime == 0)
             {
                 mulched = 1;
+            }
+        }
+        if (BActive == true)
+        {
+            if (BTime > 0)
+            {
+                BTime--;
+            }
+            else if (BTime == 0)
+            {
+                bugged = 1;
             }
         }
     }
@@ -129,6 +157,15 @@ public class FlowerDecay : MonoBehaviour
             MTime = 5000;
 
             mulched = 5;
+        }
+
+        if (otherCollider.CompareTag("Bug") == true)
+        {
+            BActive = true;
+
+            BTime = 500000;
+
+            bugged = 5;
         }
 
     }

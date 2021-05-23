@@ -11,6 +11,7 @@ TagManager:
   - mulch
   - active
   - unactive
+  - Bug
   layers:
   - Default
   - TransparentFX

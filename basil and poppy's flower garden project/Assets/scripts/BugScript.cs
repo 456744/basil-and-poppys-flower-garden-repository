@@ -6,17 +6,19 @@ public class BugScript : MonoBehaviour
 {
     SpriteRenderer ourSpriteRenderer;
 
-    private float Spawn;
-    private float Time;
+    public float Spawn;
+    public float Time;
     public bool Alive;
     public float MoreBugs;
-    public float Sprayed;
+    public float STime;
+    public bool SActive;
+    public int sprayed;
 
     private void Start()
     {
         ourSpriteRenderer = GetComponent<SpriteRenderer>();
         Alive = false;
-        Spawn = 500000;
+        Spawn = 50000;
     }
 
     
@@ -27,7 +29,7 @@ public class BugScript : MonoBehaviour
         {
             if (Time > 0)
             {
-                Time -= Sprayed;
+                Time -= 1 * sprayed;
             }
             else if (Time == 0)
             {
@@ -36,22 +38,65 @@ public class BugScript : MonoBehaviour
                 Spawn = 500000;
 
                 Alive = false;
+
+                gameObject.tag = "unactive";
+
+                transform.Translate(0, 2, 0);
             }
         }
         else if (Alive==false)
         {
             if (Spawn > 0)
             {
+
                 Spawn -= (Mathf.Round(Random.Range(0, 10)))*MoreBugs;
+                
             }
-            else if (Spawn == 0)
+            else
             {
-                ourSpriteRenderer.color = Color.white;
 
                 Time = 500000;
 
+                StartCoroutine(Grow());
+
+                //ourSpriteRenderer.color = Color.white;
+
                 Alive = true;
+                
             }
         }
+        if (SActive == true)
+        {
+            if (STime > 0)
+            {
+                STime--;
+            }
+            else if (STime == 0)
+            {
+                sprayed = 1;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D otherCollider)
+    {
+
+        if (otherCollider.CompareTag("spray") == true)
+        {
+            SActive = true;
+
+            STime = 5000;
+
+            sprayed = 3;
+        }
+
+    }
+
+        IEnumerator Grow()
+    {
+        
+        gameObject.tag = "Bug";
+        yield return new WaitForSeconds(1);
+        transform.Translate(0, -2, 0);
     }
 }

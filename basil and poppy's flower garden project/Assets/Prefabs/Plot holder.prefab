@@ -382,6 +382,16 @@ MonoBehaviour:
   Bloom: 0
   WActive: 0
   watered: 0
+  STime: 0
+  SActive: 0
+  sprayed: 0
+  MTime: 0
+  MActive: 0
+  mulched: 0
+  BTime: 0
+  BActive: 0
+  bugged: 0
+  score: 0
 --- !u!61 &7582173856260339688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -420,6 +430,7 @@ GameObject:
   - component: {fileID: 3506835657007020030}
   - component: {fileID: 2855035649922264127}
   - component: {fileID: 5377764169633505954}
+  - component: {fileID: 98566988668161995}
   m_Layer: 0
   m_Name: bugs
   m_TagString: Untagged
@@ -435,7 +446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5827810511836851677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 309.79898}
+  m_LocalPosition: {x: 0, y: 2, z: 309.79898}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1502348490829134290}
@@ -522,9 +533,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fa7f7159bc03148858f210305afc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Spawn: 0
+  Time: 0
   Alive: 0
   MoreBugs: 1
   Sprayed: 1
+--- !u!61 &98566988668161995
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5827810511836851677}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.64, y: 1.48}
+    newSize: {x: 2, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.64, y: 1.48}
+  m_EdgeRadius: 0
 --- !u!1 &6203427610766403851
 GameObject:
   m_ObjectHideFlags: 0
