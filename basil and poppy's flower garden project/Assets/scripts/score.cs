@@ -19,7 +19,7 @@ public class score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //scoreDisplay.text = points.ToString();
+        scoreDisplay.text = points.ToString();
 
         if (time > 0)
         {
