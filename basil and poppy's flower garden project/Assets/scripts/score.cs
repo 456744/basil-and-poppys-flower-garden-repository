@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class score : MonoBehaviour
 {
     public int time;
-    public int points;
+    public static int points;
     public Text scoreDisplay;
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,10 @@ public class score : MonoBehaviour
         {
             StartCoroutine(LevelEnd());
         }
+    }
+    public static void AddScore(int toAdd)
+    {
+        points += toAdd;
     }
 
     IEnumerator LevelEnd()

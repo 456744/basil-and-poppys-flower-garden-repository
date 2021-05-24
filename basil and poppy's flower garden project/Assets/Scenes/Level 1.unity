@@ -22212,7 +22212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 46
   m_Sprite: {fileID: 21300000, guid: 0024def8b5db55b4f8c74fddab29902a, type: 3}
   m_Color: {r: 0.8018868, g: 0.5365172, b: 0.20803669, a: 1}
   m_FlipX: 0
@@ -27280,7 +27280,7 @@ GameObject:
   - component: {fileID: 1095723558}
   - component: {fileID: 1095723559}
   m_Layer: 0
-  m_Name: score script
+  m_Name: scoreScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27313,7 +27313,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  points: 0
   scoreDisplay: {fileID: 1248332443}
 --- !u!1001 &1117671263
 PrefabInstance:

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FlowerDecay : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class FlowerDecay : MonoBehaviour
     public float BTime;
     public bool BActive;
     public int bugged;
-    public int score;
+    public int scoreTime;
 
     private void Start()
     {
@@ -31,7 +32,7 @@ public class FlowerDecay : MonoBehaviour
         sprayed = 1;
         mulched = 1;
         bugged = 1;
-        score = 5000;
+        scoreTime = 5000;
         BTime = 500000;
     }
 
@@ -59,15 +60,17 @@ public class FlowerDecay : MonoBehaviour
                 gameObject.tag = "unactive";
                 Bloom = 10000000;
             }
-            if (score > 0)
+            if (scoreTime > 0)
             {
-                score--;
+                scoreTime--;
             }
-            else if (score == 0)
+            else if (scoreTime == 0)
             {
-                //do a thing
+                //score PlayerScore = FindObjectOfType<score>();
 
-                score = 5000;
+                score.AddScore(1);
+
+                scoreTime = 5000;
             }
         }
         else if (gameObject.CompareTag("unactive"))
