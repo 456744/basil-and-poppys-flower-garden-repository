@@ -21,6 +21,7 @@ public class FlowerDecay : MonoBehaviour
     public bool BActive;
     public int bugged;
     public int scoreTime;
+    public bool Weed;
 
     private void Start()
     {
@@ -34,12 +35,19 @@ public class FlowerDecay : MonoBehaviour
         bugged = 1;
         scoreTime = 5000;
         BTime = 500000;
+        Weed = false;
     }
 
 
     
     private void Decay()
     {
+        if (Random.Range(0, 10) >7 )
+        {
+            Animator ourAnimator = GetComponent<Animator>();
+            ourAnimator.SetBool("weed", true);
+            Weed = true;
+        }
         ourSpriteRenderer.color = Color.cyan;
         gameObject.tag = "active";
         Time = 2500;
@@ -59,6 +67,9 @@ public class FlowerDecay : MonoBehaviour
                 ourSpriteRenderer.color = Color.clear;
                 gameObject.tag = "unactive";
                 Bloom = 10000000;
+                Animator ourAnimator = GetComponent<Animator>();
+                ourAnimator.SetBool("weed", false);
+                Weed = false;
             }
             if (scoreTime > 0)
             {
@@ -67,8 +78,15 @@ public class FlowerDecay : MonoBehaviour
             else if (scoreTime == 0)
             {
                 //score PlayerScore = FindObjectOfType<score>();
-
-                score.AddScore(1);
+                if (Weed == false)
+                {
+                    score.AddScore(1);
+                }
+                else 
+                {
+                    score.AddScore(-1);
+                }
+                
 
                 scoreTime = 5000;
             }
