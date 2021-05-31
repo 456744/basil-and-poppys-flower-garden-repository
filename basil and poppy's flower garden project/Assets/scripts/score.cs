@@ -6,14 +6,17 @@ using UnityEngine.UI;
 
 public class score : MonoBehaviour
 {
+    SpriteRenderer ourSpriteRenderer;
     public int time;
     public static int points;
     public Text scoreDisplay;
     // Start is called before the first frame update
     void Start()
     {
+        ourSpriteRenderer = GetComponent<SpriteRenderer>();
         time = 50000;
         points = 0;
+        ourSpriteRenderer.color = Color.clear;
     }
 
     // Update is called once per frame
@@ -27,6 +30,8 @@ public class score : MonoBehaviour
         }
         else
         {
+
+            ourSpriteRenderer.color = Color.white;
             StartCoroutine(LevelEnd());
         }
     }

@@ -27,7 +27,7 @@ public class FlowerDecay : MonoBehaviour
     {
         ourSpriteRenderer = GetComponent<SpriteRenderer>();
         Time = 10;
-        Bloom = 20000000;
+        Bloom = 2000;
         WActive = false;
         watered = 1;
         sprayed = 1;
@@ -66,7 +66,7 @@ public class FlowerDecay : MonoBehaviour
             {
                 ourSpriteRenderer.color = Color.clear;
                 gameObject.tag = "unactive";
-                Bloom = 10000000;
+                Bloom = 1500;
                 Animator ourAnimator = GetComponent<Animator>();
                 ourAnimator.SetBool("weed", false);
                 Weed = false;
@@ -82,13 +82,13 @@ public class FlowerDecay : MonoBehaviour
                 {
                     score.AddScore(1);
                 }
-                else 
+                else
                 {
                     score.AddScore(-1);
                 }
                 
 
-                scoreTime = 5000;
+                scoreTime = 2400;
             }
         }
         else if (gameObject.CompareTag("unactive"))

@@ -30305,6 +30305,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 252944194519425922, guid: 01b302b8e7a4e774ab3e1c96361c594f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 733538300651656317, guid: 01b302b8e7a4e774ab3e1c96361c594f,
         type: 3}
       propertyPath: scoreDisplay
