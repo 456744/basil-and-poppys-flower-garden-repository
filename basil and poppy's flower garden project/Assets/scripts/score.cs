@@ -14,7 +14,7 @@ public class score : MonoBehaviour
     void Start()
     {
         ourSpriteRenderer = GetComponent<SpriteRenderer>();
-        time = 50000;
+        time = 25000;
         points = 0;
         ourSpriteRenderer.color = Color.clear;
     }

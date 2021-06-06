@@ -66,7 +66,7 @@ public class FlowerDecay : MonoBehaviour
             {
                 ourSpriteRenderer.color = Color.clear;
                 gameObject.tag = "unactive";
-                Bloom = 1500;
+                Bloom = 3500;
                 Animator ourAnimator = GetComponent<Animator>();
                 ourAnimator.SetBool("weed", false);
                 Weed = false;
