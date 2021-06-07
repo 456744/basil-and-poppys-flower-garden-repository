@@ -30320,6 +30320,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 733538299978710051, guid: 01b302b8e7a4e774ab3e1c96361c594f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 733538300651656317, guid: 01b302b8e7a4e774ab3e1c96361c594f,
         type: 3}
       propertyPath: scoreDisplay

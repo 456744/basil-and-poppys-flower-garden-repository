@@ -33,7 +33,7 @@ public class FlowerDecay : MonoBehaviour
         sprayed = 1;
         mulched = 1;
         bugged = 1;
-        scoreTime = 5000;
+        scoreTime = 2400;
         BTime = 500000;
         Weed = false;
     }
